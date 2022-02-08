@@ -1,0 +1,125 @@
+<!--5th freeCodeCamp Web Design Project Challenge-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jason Jacobs</title>
+        <style>
+            #welcome-section {
+                background-color: #2FA;
+                width: 100%;
+                height: 100vh;
+            }
+            gallery {
+                display: flex;
+                height: 500px;
+                width: 100%;
+                background-color: #2CF;
+                justify-content: space-evenly;
+            }
+            .project-tile {
+                width: 30%;
+                
+            }
+            .image {
+                height: 40%;
+                width:80%;
+            }
+            #navbar {
+                top: 0;
+                display: flex;
+                position: fixed;
+                justify-content: flex-end;
+                height: 50px;
+                width: 100%;
+                background-color: rgba(100,50,250,0.2);
+            }
+            #navbar-item {
+            width: 10%;
+            }
+            @media (max-width: 800px){
+                #navbar {
+                display: flex;
+                justify-content: space-evenly;
+                height: 50px;
+                width: 100%;
+                background-color: rgba(100,250,50,1);
+            }
+            }
+        </style>
+    </head>
+    <body>
+
+<!--Nav bar-->
+        <nav id="navbar">
+            <a href="#welcome-section" id="navbar-item"> <p >Home</p></a>
+            <a href="#projects" id="navbar-item"> <p >Projects</p></a>
+            <a href="#profile" id="navbar-item"><p>Contact info</p></a>
+        </nav>
+        
+
+<!--welcome section-->
+        <br>
+        <section id="welcome-section">
+        <h1 align="center">Hi I am Jason Jacobs</h1>
+
+            <p align="center"> a web developer.</p>
+        
+
+            
+        </section>
+
+        <br><br><br><br><br><br>
+<!--projects section-->
+
+        <section id="projects">
+            <gallery>
+                <div class="project-tile">
+                    <a href="https://codepen.io/Jayj30pro/pen/GROpxxY" target="_blank">
+                        <p>Tribute to raspberry pi</p>
+                        <img class="image"src="https://www.newark.com/productimages/large/en_US/02AH3161-40.jpg"alt="raspberry pi">
+                    </a>
+                </div>
+ 
+                <div class="project-tile">
+                   <a href="https://codepen.io/Jayj30pro/pen/oNobbZP" target="_blank">
+                        <p>Programming survey</p>
+                        <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3gvnxcwhwnPX5bgCaFTYrXHDp1rs4ADEiSA&usqp=CAU">
+                    </a>
+                </div>
+
+                <div class="project-tile">
+                    <a href="https://codepen.io/Jayj30pro/pen/ExbgEeB" target="_blank">
+                        <p>Python documentation</p>
+                        <img calss="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wpAtVws2qjA2g2yMIq0d33_RoqkpZchiFQ&usqp=CAU">
+                    </a>
+                </div>
+                
+            </gallery>
+        </section>
+        <br><br><br><br><br><br>
+
+<!--contact section-->
+        <section id="profile">
+            <gallery>
+                <a id="profile-link" href="https://github.com/Jayj30pro" target="_blank">
+                    <img class="image" src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" alt="github"><p align="center">Git Hub</p>
+                </a>
+                <a id="profile-link" href="https://www.freecodecamp.org/Jayj30pro" target="_blank">
+                    <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_TylOZS_5oEPTQHRBU3rRSnK1dLtNNkXusQ&usqp=CAU" alt="Free Code Camp"><p align="center">Free Code Camp</p>
+                </a>
+                <a id="profile-link">
+                </a>
+            </gallery>
+        </section>
+
+        <div>
+
+        </div>
+        <footer>
+            <small><p align="right">This page is the most accurate source of info on Jason Jacobs</p></small>
+        </footer>
+    </body>
+</html>
+
+
